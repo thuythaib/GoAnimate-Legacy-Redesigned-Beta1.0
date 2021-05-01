@@ -1,18 +1,80 @@
-<body>
+<html class="js-focus-visible" data-js-focus-visible=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">
+@font-face {
+  font-weight: 400;
+  font-style:  normal;
+  font-family: 'Circular-Loom';
+
+  src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Book-cd7d2bcec649b1243839a15d5eb8f0a3.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 500;
+  font-style:  normal;
+  font-family: 'Circular-Loom';
+
+  src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Medium-d74eac43c78bd5852478998ce63dceb3.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 700;
+  font-style:  normal;
+  font-family: 'Circular-Loom';
+
+  src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Bold-83b8ceaf77f49c7cffa44107561909e4.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 900;
+  font-style:  normal;
+  font-family: 'Circular-Loom';
+
+  src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Black-bf067ecb8aa777ceb6df7d72226febca.woff2') format('woff2');
+}</style><style type="text/css">
+@font-face {
+  font-weight: 400;
+  font-style:  normal;
+  font-family: 'Circular-Loom';
+
+  src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Book-cd7d2bcec649b1243839a15d5eb8f0a3.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 500;
+  font-style:  normal;
+  font-family: 'Circular-Loom';
+
+  src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Medium-d74eac43c78bd5852478998ce63dceb3.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 700;
+  font-style:  normal;
+  font-family: 'Circular-Loom';
+
+  src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Bold-83b8ceaf77f49c7cffa44107561909e4.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 900;
+  font-style:  normal;
+  font-family: 'Circular-Loom';
+
+  src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Black-bf067ecb8aa777ceb6df7d72226febca.woff2') format('woff2');
+}</style></head><body>
 	<header>
 		<div>
 			<div>
-				<a href="./"><img src="logo.png" /></a>
+				<a href="http://localhost/html/"><img src="./list_files/logo.png"></a>
 			</div>
 			<div>
 				<a class="button_small" onclick="document.getElementById('file').click()">UPLOAD A MOVIE</a>
 				<div class="char_dropdown button_small">
 					<div>MAKE A CHARACTER</div>
 					<menu>
-						<a href="/character_creator/new_char/?themeId=family&bs=adam">Adam</a>
-						<a href="/character_creator/new_char/?themeId=family&bs=eve">Eve</a>
-						<a href="/character_creator/new_char/?themeId=family&bs=bob">Bob</a>
-						<a href="/character_creator/new_char/?themeId=family&bs=rocky">Rocky</a>
+						<a href="http://localhost/cc?themeId=family&amp;bs=adam">Adam</a>
+						<a href="http://localhost/cc?themeId=family&amp;bs=eve">Eve</a>
+						<a href="http://localhost/cc?themeId=family&amp;bs=bob">Bob</a>
+						<a href="http://localhost/cc?themeId=family&amp;bs=rocky">Rocky</a>
 						<div></div>
 						<!--
 						<a href="/cc?themeId=business&bs=default">Business</a>
@@ -23,36 +85,35 @@
 						<a href="/cc?themeId=whiteboard&bs=kid">Whiteboard (Kid)</a>
 						<div></div>
 						-->
-						<a href="/cc?themeId=anime&bs=guy">Guy (Anime)</a>
-						<a href="/cc?themeId=anime&bs=girl">Girl (Anime)</a>
+						<a href="http://localhost/cc?themeId=anime&amp;bs=guy">Guy (Anime)</a>
+						<a href="http://localhost/cc?themeId=anime&amp;bs=girl">Girl (Anime)</a>
 						<div></div>
-						<a href="/cc?themeId=ninjaanime&bs=guy">Guy (Ninja Anime)</a>
-						<a href="/cc?themeId=ninjaanime&bs=girl">Girl (Ninja Anime)</a>
+						<a href="http://localhost/cc?themeId=ninjaanime&amp;bs=guy">Guy (Ninja Anime)</a>
+						<a href="http://localhost/cc?themeId=ninjaanime&amp;bs=girl">Girl (Ninja Anime)</a>
 						<div></div>
-						<a href="/cc?themeId=cc2&bs=default">Lil' Peepz</a>
+						<a href="http://localhost/cc?themeId=cc2&amp;bs=default">Lil' Peepz</a>
 						<div></div>
-						<a href="/cc?themeId=chibi&bs=default">Chibi Peepz</a>
+						<a href="http://localhost/cc?themeId=chibi&amp;bs=default">Chibi Peepz</a>
 						<div></div>
-						<a href="/cc?themeId=ninja&bs=default">Chibi Ninjas</a>
+						<a href="http://localhost/cc?themeId=ninja&amp;bs=default">Chibi Ninjas</a>
 					</menu>
 				</div>
 				<div class="char_dropdown button_small">
 					<div>BROWSE YOUR CHARACTERS</div>
 					<menu>
-						<a href="/character_creator/">Comedy World</a>
-						<a href="/cc_browser?themeId=anime">Anime</a>
-						<a href="/cc_browser?themeId=ninjaanime">Ninja Anime</a>
-						<a href="/cc_browser?themeId=cc2">Lil' Peepz</a>
-						<a href="/cc_browser?themeId=chibi">Chibi Peepz</a>
-						<a href="/cc_browser?themeId=ninja">Chibi Ninjas</a>
+						<a href="http://localhost/cc_browser?themeId=family">Comedy World</a>
+						<a href="http://localhost/cc_browser?themeId=anime">Anime</a>
+						<a href="http://localhost/cc_browser?themeId=ninjaanime">Ninja Anime</a>
+						<a href="http://localhost/cc_browser?themeId=cc2">Lil' Peepz</a>
+						<a href="http://localhost/cc_browser?themeId=chibi">Chibi Peepz</a>
+						<a href="http://localhost/cc_browser?themeId=ninja">Chibi Ninjas</a>
 					</menu>
 				</div>
 				<a href="http://localhost/html/videomaker.html" class="button_big">CREATE A VIDEO</a>
 			</div>
 		</div>
-		<div class="warning"><strong>This version of GoAnimate Legacy Redesgined is currently in DEVELOPMENT/BETA!</a>
-                        </strong><br>If you see any bugs or glitches, please contact
-			me on Discord at GA4SGuy2021#0483!</a>
+		<div class="warning"><strong>This is a project to reveive the legacy video maker! And is currently in development/beta 1.0
+                        </strong><br>If you need any help, join our discord: https://discord.gg/KFxTfFjD
 		</div>
 	</header>
 	<table>
@@ -64,15 +125,15 @@
 				<td></td>
 			</tr>
 		</thead>
-		<tbody></tbody>
+		<tbody><tr><td><img src="./list_files/m-9.png"></td><td><div>an announcment about my return</div><div>00:02</div></td><td><span>2021-05-01 02:05:09.734Z</span></td><td><a href="javascript:;" onclick="popup('m-9')"></a><a href="http://localhost/go_full?movieId=m-9"></a><a href="http://localhost/movies/m-9.xml" download="an announcment about my return"></a></td></tr><tr><td><img src="./list_files/m-8.png"></td><td><div>goanimators when they get the legacy video maker b</div><div>00:07</div></td><td><span>2021-05-01 01:16:33.548Z</span></td><td><a href="javascript:;" onclick="popup('m-8')"></a><a href="http://localhost/go_full?movieId=m-8"></a><a href="http://localhost/movies/m-8.xml" download="goanimators when they get the legacy video maker b"></a></td></tr><tr><td><img src="./list_files/m-7.png"></td><td><div>test again</div><div>00:02</div></td><td><span>2021-05-01 00:21:31.263Z</span></td><td><a href="javascript:;" onclick="popup('m-7')"></a><a href="http://localhost/go_full?movieId=m-7"></a><a href="http://localhost/movies/m-7.xml" download="test again"></a></td></tr><tr><td><img src="./list_files/m-6.png"></td><td><div>test vid</div><div>00:02</div></td><td><span>2021-05-01 00:20:15.868Z</span></td><td><a href="javascript:;" onclick="popup('m-6')"></a><a href="http://localhost/go_full?movieId=m-6"></a><a href="http://localhost/movies/m-6.xml" download="test vid"></a></td></tr></tbody>
 		<tfoot>
 			<tr>
-				<td colspan="127"><a id="load_more" href="javascript:;">Loading extra stuff...</a></td>
+				<td colspan="127"></td>
 			</tr>
 		</tfoot>
 	</table>
-	<form enctype='multipart/form-data' action='/upload_movie' method='post'>
-		<input id='file' type="file" onchange="this.form.submit()" name='import' accept=".xml" />
+	<form enctype="multipart/form-data" action="http://localhost/upload_movie" method="post">
+		<input id="file" type="file" onchange="this.form.submit()" name="import" accept=".xml">
 	</form>
 	<script>
 		var json;
@@ -463,4 +524,5 @@
 			font-style: normal;
 		}
 	</style>
-</body>
+
+<div class="betternet-wrapper"></div><loom-container id="lo-engage-ext-container"><div></div><loom-shadow classname="resolved"></loom-shadow></loom-container><div class="betternet-wrapper"></div></body><loom-container id="lo-engage-ext-container"><div></div><loom-shadow classname="resolved"></loom-shadow></loom-container></html>
