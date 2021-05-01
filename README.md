@@ -8,3 +8,5 @@ npm install
 npm start
 ```
 **When done, go to your web browser and navigate to `localhost`.**
+# Alternate Startup Method
+In GA Legacy Redesigned, there is a file called faststart.bat, and with this file, you can start GA Legacy Redesigned faster, and easier, without opening up command prompt and typing all of this in command prompt.
