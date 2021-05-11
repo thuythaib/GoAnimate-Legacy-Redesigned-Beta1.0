@@ -42,6 +42,12 @@
 				"Content-Type": "text/html; charset=UTF-8"
 			}
 		},
+		"/html/([^?]+).*": {
+			"regexLink": "/html/$1",
+			"headers": {
+				"Content-Type": "text/html; charset=UTF-8"
+			}
+		},
 		"/dashboard/([^?]+html).*": {
 			"contentReplace": true,
 			"regexLink": "/dashboard/$1",
@@ -55,8 +61,28 @@
 				"Content-Type": "text/html; charset=UTF-8"
 			}
 		},
-		"/html/([^?]+).*": {
-			"regexLink": "/html/$1",
+		"/videomaker/full/([^?]+html).*": {
+			"contentReplace": true,
+			"regexLink": "/videomaker/full/$1",
+			"headers": {
+				"Content-Type": "text/html; charset=UTF-8"
+			}
+		},
+		"/videomaker/full/([^?]+).*": {
+			"regexLink": "/videomaker/full/$1",
+			"headers": {
+				"Content-Type": "text/html; charset=UTF-8"
+			}
+		},
+		"/videomaker.html([^?]+html).*": {
+			"contentReplace": true,
+			"regexLink": "/videomaker.html$1",
+			"headers": {
+				"Content-Type": "text/html; charset=UTF-8"
+			}
+		},
+		"/videomaker.html([^?]+).*": {
+			"regexLink": "/videomaker.html$1",
 			"headers": {
 				"Content-Type": "text/html; charset=UTF-8"
 			}
