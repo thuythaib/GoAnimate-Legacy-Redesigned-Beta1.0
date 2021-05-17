@@ -91,14 +91,13 @@ module.exports = function (req, res, url) {
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-            <a class="navbar-brand" href="/dashboard/videos" title="GoAnimate Legacy Redesigned">
+            <a class="navbar-brand" href="/dashboard/videos.html" title="GoAnimate Legacy Redesigned">
                 <img src="/html/img/logo.png" alt="GoAnimate Legacy Redesigned">
             </a>
         </div>
-
         <ul class="nav site-nav-alert-nav hidden-xs">
             <li>
-                <a href="/notifications" title="Notifications"><span class="glyph-pro glyph-bell"></a>
+                <a href="/notifications.html" title="Notifications"><span class="glyph-pro glyph-bell"></a>
             </li>
         </ul>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -106,26 +105,26 @@ module.exports = function (req, res, url) {
                 <li class="dropdown">
                     <a class="dropdown-toggle" href="#" data-toggle="dropdown">Your Account <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="/student">Dashboard</a></li>
-                        <li><a href="/dashboard/videos">Your Videos</a></li>
+                        <li><a href="/student.html">Dashboard</a></li>
+                        <li><a href="/dashboard/videos.html">Your Videos</a></li>
                         <li class="divider"></li>
-                        <li><a href="/account">Account Settings</a></li>
-                        <li><a href="/profile/you">Your Profile</a></li>
+                        <li><a href="/account.html">Account Settings</a></li>
+                        <li><a href="/profile/you.html">Your Profile</a></li>
                         <li class="divider"></li>
-                        <li><a class="logout-link" href="/logoff">Logout</a></li>
+                        <li><a class="logout-link" href="/logoff.html">Logout</a></li>
                     </ul>
                 </li><li class="dropdown">
                     <a class="dropdown-toggle" href="#" data-toggle="dropdown">Explore <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="/students">Students</a></li>
-                        <li><a href="/teachers">Teachers</a></li>
-                        <li><a href="/videos">Videos</a></li>
-                        <li><a href="/public_faq">FAQ</a></li>
+                        <li><a href="/students.html">Students</a></li>
+                        <li><a href="/teachers.html">Teachers</a></li>
+                        <li><a href="/videos.html">Videos</a></li>
+                        <li><a href="/public_faq.html">FAQ</a></li>
                     </ul>
                 </li>
                 <li>
-				<a class="hidden-sm hidden-md hidden-lg" href="/v/videomaker">Make a Video</a>
-				<span class="site-nav-btn hidden-xs"><a class="btn btn-orange" href="/v/videomaker">Make a Video</a></span>
+				<a class="hidden-sm hidden-md hidden-lg" href="/html/videomaker.html">Make a Video</a>
+				<span class="site-nav-btn hidden-xs"><a class="btn btn-orange" href="/html/videomaker.html">Make a Video</a></span>
                 </li>
             </ul>
         </div>
@@ -133,14 +132,13 @@ module.exports = function (req, res, url) {
 </nav>
 <div class="container container-cc">
       <ul class="breadcrumb">
-                <li><a href="/c/create">Make a video</a></li>
+                <li><a href="/html/create.html">Make a video</a></li>
                 <li class="active">Your Characters</li>
             </ul>
     
-            <p>Browse characters already available in your theme and use them as a starting point to create new custom characters.</p>
+            <p>Browse characters already available in your characters section and use them as a starting point to create new custom characters.</p>
     
-    <div id="ccbrowser-container" align="center">
-    ${toObjectString(attrs, params)}
+    <div id="ccbrowser-container" align="center">${toObjectString(attrs, params)}
     </div>
     </div>
 	<div class="site-footer">
