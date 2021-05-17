@@ -16,7 +16,7 @@ function toParamString(table) {
 		.join(" ");
 }
 function toObjectString(attrs, params) {
-	return `<object id="obj" ${Object.keys(attrs)
+	return `<object ${Object.keys(attrs)
 		.map((key) => `${key}="${attrs[key].replace(/"/g, '\\"')}"`)
 		.join(" ")}>${toParamString(params)}</object>`;
 }
@@ -35,9 +35,9 @@ module.exports = function (req, res, url) {
 	switch (url.pathname) {		
 		case "/videomaker/full/": {
 			let presave =
-				query.movieId && query.movieId.startsWith("m")
-					? query.movieId
-					: `m-${fUtil[query.noAutosave ? "getNextFileId" : "fillNextFileId"]("movie-", ".xml")}`;
+				query.editcheck && query.editcheck.startsWith("e")
+					? query.editcheck
+					: `m-${fUtil[query.Autosave ? "getNextFileId" : "fillNextFileId"]("movie-", ".xml")}`;
 			title = "Video Editor";
 			attrs = {
 				data: process.env.SWF_URL + "/go_full.swf",
@@ -49,21 +49,21 @@ module.exports = function (req, res, url) {
 				flashvars: {
 					apiserver: "/",
 					storePath: process.env.STORE_URL + "/<store>",
-					isEmbed: 1,
+					isEmbed: 0,
 					ctc: "go",
-					ut: 50,
+					ut: 23,
 					bs: "default",
 					appCode: "go",
 					page: "",
 					siteId: "go",
 					lid: 13,
 					isLogin: "Y",
-					retut: 1,
+					retut: 0,
 					clientThemePath: process.env.CLIENT_URL + "/<client_theme>",
 					themeId: "business",
 					tlang: "en_US",
 					presaveId: presave,
-					goteam_draft_only: 1,
+					goteam_draft_only: 0,
 					isWide: 1,
 					collab: 0,
 					nextUrl: "/html/list.html",
@@ -84,11 +84,10 @@ module.exports = function (req, res, url) {
 		)}</script>
 <link rel="stylesheet" type="text/css" href="/html/css/common_combined.css.gz.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700">
-<link rel="stylesheet" href="/html/css/importer.css.gz.css">
 <link rel="stylesheet" href="/html/css/studio.css.gz.css">
 <script href="/html/js/common_combined.js.gz.js"></script>
 </head>
-<body style="margin:0px">
+<div id="studio_holder" style="margin:0px">
 <nav class="navbar site-nav" role="navigation">
     <div class="container">
         <div class="navbar-header">
@@ -98,14 +97,14 @@ module.exports = function (req, res, url) {
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-            <a class="navbar-brand" href="/dashboard/videos" title="GoAnimate Legacy Redesigned">
+            <a class="navbar-brand" href="/dashboard/videos.html" title="GoAnimate Legacy Redesigned">
                 <img src="/html/img/logo.png" alt="GoAnimate Legacy Redesigned">
             </a>
         </div>
 
         <ul class="nav site-nav-alert-nav hidden-xs">
             <li>
-                <a href="/notifications" title="Notifications"><span class="glyph-pro glyph-bell"></a>
+                <a href="/notifications.html" title="Notifications"><span class="glyph-pro glyph-bell"></a>
             </li>
         </ul>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -113,33 +112,33 @@ module.exports = function (req, res, url) {
                 <li class="dropdown">
                     <a class="dropdown-toggle" href="#" data-toggle="dropdown">Your Account <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="/student">Dashboard</a></li>
-                        <li><a href="/dashboard/videos">Your Videos</a></li>
+                        <li><a href="/student.html">Dashboard</a></li>
+                        <li><a href="/dashboard/videos.html">Your Videos</a></li>
                         <li class="divider"></li>
-                        <li><a href="/account">Account Settings</a></li>
-                        <li><a href="/profile/you">Your Profile</a></li>
+                        <li><a href="/account.html">Account Settings</a></li>
+                        <li><a href="/profile/you.html">Your Profile</a></li>
                         <li class="divider"></li>
-                        <li><a class="logout-link" href="/logoff">Logout</a></li>
+                        <li><a class="logout-link" href="/logoff.html">Logout</a></li>
                     </ul>
                 </li><li class="dropdown">
                     <a class="dropdown-toggle" href="#" data-toggle="dropdown">Explore <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="/students">Students</a></li>
-                        <li><a href="/teachers">Teachers</a></li>
-                        <li><a href="/videos">Videos</a></li>
-                        <li><a href="/public_faq">FAQ</a></li>
+                        <li><a href="/students.html">Students</a></li>
+                        <li><a href="/teachers.html">Teachers</a></li>
+                        <li><a href="/videos.html">Videos</a></li>
+                        <li><a href="/public_faq.html">FAQ</a></li>
                     </ul>
                 </li>
                 <li>
-				<a class="hidden-sm hidden-md hidden-lg" href="/v/videomaker">Make a Video</a>
-				<span class="site-nav-btn hidden-xs"><a class="btn btn-orange" href="/v/videomaker">Make a Video</a></span>
+				<a class="hidden-sm hidden-md hidden-lg" href="/html/videomaker.html">Make a Video</a>
+				<span class="site-nav-btn hidden-xs"><a class="btn btn-orange" href="/html/videomaker.html">Make a Video</a></span>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
-${toObjectString(attrs, params)}
-</body>${stuff.pages[url.pathname] || ""}`
+<div id="studio_holder" style="margin:0px">${toObjectString(attrs, params)}
+</div>${stuff.pages[url.pathname] || ""}`
 	);
 	return true;
 };
