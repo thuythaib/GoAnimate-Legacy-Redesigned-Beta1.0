@@ -124,20 +124,19 @@ module.exports = function (req, res, url) {
 		<div id="video-page">
     <input type="hidden" name="ct" value="ZGuIheohj78KogqqFMVEXQI7GASGGcS1dC1znbdZzlmaL96D6rGzqkdpEZ6YLctCdKfwSELdjFOjhwPI2Nflra0ZYdoejDwiNMviXYgFgvpZlbs5uzh6vT2Wjhfwxd_dHWNLq1QyRYEy3N99m+bD6BKqofDaJfcCemDYIm1LKlIBmZCzvyQudYFVBT7pWBPc9ZOLTvvI+ynHo1xcbKMZQatab_0Q6zyozNZ52ZrLUJ8ZWYLLe4">
     <div class="background">
-        <div class="thumbnail-container" style="background-image:url('http://localhost/movie_thumbs/m-6.png')">
+        <div class="thumbnail-container" style="background-image:url('/movie_thumbs/')">
             <div class="thumbnail-overlay"></div>
         </div>
         <div class="container">
             <div class="main">
                 <div class="video-player-viewport using-flash" style="background-image: url('http://web.archive.org/web/20181123104749im_/https://assets.vyond.com/v1/get/fs.goanimate.com/files/thumbnails/movie/2724/12296724/29109915L.jpg?enc_type=sse_c&amp;expires=1536007313&amp;sec_key_id=2034338&amp;signature=2ba191706429b6c63b86296c86862190f54a3917b195639fb28d60fed027ed7c');">
-                                <div class="video-player-wrapper embed-responsive embed-responsive-16by9">
-								${toObjectString(attrs, params)}
+                                <div class="video-player-wrapper embed-responsive embed-responsive-16by9">${toObjectString(attrs, params)}
                                 </div>
                                 <div class="video-info hidden-xs" data-video-id="07m3MiyKSl-w" data-is-owner="yes" data-owner="0aWj-HdFtJ5c" data-duration="4" style="display: block;">
                                     <div class="video-info-content">
                                         <div class="editable">
                                             <div class="non-edit-fields">
-                                                <a class="edit-video-info" data-action="edit-video-info">Edit video info</a>
+                                                <a class="edit-video-info" data-action="/videomaker/full/?editcheck=">Edit video info</a>
                                                 <h1 class="title">Test</h1>
                                                 <p class="description"></p>
                                             </div>
@@ -531,11 +530,11 @@ module.exports = function (req, res, url) {
                 <div class="site-footer-nav-col">
                     <h4><span>About GoAnimate</span></h4>
                     <ul class="list-unstyled">
-                        <li><a href="http://web.archive.org/web/20180307222818/https://goanimate.com/about">Who we are</a></li>
-                        <li><a href="http://web.archive.org/web/20180307222818/https://resources.goanimate.com/careers/">Careers</a></li>
-                        <li><a href="http://web.archive.org/web/20180307222818/https://goanimate.com/contactus">Contact Us</a></li>
-                        <li><a href="http://web.archive.org/web/20180307222818/https://blog.goanimate.com/">Blog</a></li>
-                        <li><a href="http://web.archive.org/web/20180307222818/https://press.goanimate.com/">Press</a></li>
+                        <li><a href="https://josephcrosmanplays532.github.io/about">Who we are</a></li>
+                        <li><a href="https://resources.josephcrosmanplays532.github.io/careers/">Careers</a></li>
+                        <li><a href="https://josephcrosmanplays532.github.io/contactus">Contact Us</a></li>
+                        <li><a href="https://blog.josephcrosmanplays532.github.io/">Blog</a></li>
+                        <li><a href="https://press.josephcrosmanplays532.github.io/">Press</a></li>
                     </ul>
                 </div>
             </div>
@@ -543,9 +542,9 @@ module.exports = function (req, res, url) {
                 <div class="site-footer-nav-col">
                     <h4><span>GoAnimate Solutions</span></h4>
                     <ul class="list-unstyled">
-                        <li><a href="http://web.archive.org/web/20180307222818/https://goanimate.com/business/videoplans?hook=footer_button.site">Plans and Pricing</a></li>
-                        <li><a href="http://web.archive.org/web/20180307222818/https://goanimate.com/business/videoplans/federal?hook=footer_button.site">Plans for Federal Agencies</a></li>
-                        <li><a href="http://web.archive.org/web/20180307222818/https://goanimate4schools.com/" target="_blank">GoAnimate for Schools</a></li>
+                        <li><a href="https://discord.gg/goanimate?hook=footer_button.site">Plans and Pricing</a></li>
+                        <li><a href="https://discord.io/goanimate4schools?hook=footer_button.site">Plans for Federal Agencies</a></li>
+                        <li><a href="https://goanimateforschools.github.io/" target="_blank">GoAnimate for Schools</a></li>
                     </ul>
                 </div>
             </div>
@@ -553,9 +552,9 @@ module.exports = function (req, res, url) {
                 <div class="site-footer-nav-col">
                     <h4><span>Usage Guidelines</span></h4>
                     <ul class="list-unstyled">
-                        <li><a href="http://web.archive.org/web/20180307222818/https://goanimate.com/termsofuse">Terms of Service</a></li>
-                        <li><a href="http://web.archive.org/web/20180307222818/https://goanimate.com/privacy">Privacy Policy</a></li>
-                        <li><a href="//web.archive.org/web/20180307222818/https://support.goanimate.com/hc/en-us/articles/202408574" target="_blank">Cancellation Policy</a></li>
+                        <li><a href="https://josephcrosmanplays532.github.io/termsofuse">Terms of Service</a></li>
+                        <li><a href="https://josephcrosmanplays532.github.io/privacy">Privacy Policy</a></li>
+                        <li><a href="//support.josephcrosmanplays532.github.io/hc/en-us/articles/202408574" target="_blank">Cancellation Policy</a></li>
                     </ul>
                 </div>
             </div>
@@ -563,8 +562,8 @@ module.exports = function (req, res, url) {
                 <div class="site-footer-nav-col">
                     <h4>Getting Help</h4>
                     <ul class="list-unstyled">
-                        <li><a href="http://web.archive.org/web/20180307222818/https://resources.goanimate.com/">Resources</a></li>
-                        <li><a href="http://web.archive.org/web/20180307222818/https://support.goanimate.com/">Help Center</a></li>
+                        <li><a href="https://resources.josephcrosmanplays532.github.io/">Resources</a></li>
+                        <li><a href="https://support.josephcrosmanplays532.github.io/">Help Center</a></li>
                     </ul>
                 </div>
             </div>
@@ -575,25 +574,24 @@ module.exports = function (req, res, url) {
                 <div class="site-footer-socials-container">
                     Follow us on:
                     <ul class="site-footer-socials">
-                        <li><a class="glyph-social glyph-facebook" href="http://web.archive.org/web/20180307222818/https://www.facebook.com/GoAnimateInc"><span class="sr-only">Facebook</span></a></li>
-                        <li><a class="glyph-social glyph-twitter" href="http://web.archive.org/web/20180307222818/https://twitter.com/GoAnimate"><span class="sr-only">Twitter</span></a></li>
-                        <li><a class="glyph-social glyph-linked-in" href="http://web.archive.org/web/20180307222818/https://www.linkedin.com/company/goanimate"><span class="sr-only">LinkedIn</span></a></li>
-                        <li><a class="glyph-social glyph-google-plus" href="http://web.archive.org/web/20180307222818/https://plus.google.com/+goanimate"><span class="sr-only">Google+</span></a></li>
-                        <li><a class="glyph-social glyph-youtube" href="http://web.archive.org/web/20180307222818/https://www.youtube.com/user/GoAnimate"><span class="sr-only">YouTube</span></a></li>
+                        <li><a class="glyph-social glyph-facebook" href="https://www.facebook.com/GoAnimateInc"><span class="sr-only">Facebook</span></a></li>
+                        <li><a class="glyph-social glyph-twitter" href="https://twitter.com/GoAnimate"><span class="sr-only">Twitter</span></a></li>
+                        <li><a class="glyph-social glyph-linked-in" href="https://www.linkedin.com/company/goanimate"><span class="sr-only">LinkedIn</span></a></li>
+                        <li><a class="glyph-social glyph-google-plus" href="https://plus.google.com/+goanimate"><span class="sr-only">Google+</span></a></li>
+                        <li><a class="glyph-social glyph-youtube" href="https://www.youtube.com/user/GoAnimate"><span class="sr-only">YouTube</span></a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-sm-6">
                 <div class="site-footer-copyright">
-                    <img src="http://web.archive.org/web/20180307222818im_/https://d3v4eglovri8yt.cloudfront.net/static/f789d2b2551c1fb6/go/img/footer/logo_amazon.png" alt="AWS Partner Network">
+                    <img src="https://d3v4eglovri8yt.cloudfront.net/static/add8e214e09bd155/go/img/footer/logo_amazon.png" alt="AWS Partner Network">
                     &nbsp;&nbsp;&nbsp;
                     <div class="ga-copy">GoAnimate © 2021</div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-</body>${stuff.pages[url.pathname] || ""}`
+</div>${stuff.pages[url.pathname] || ""}`
 	);
 	return true;
 };
